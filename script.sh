@@ -94,9 +94,14 @@ if [ "$(uname)" == "Darwin" ] || [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]
     InstallWget
     InstallCurl
 else 
-    WinInstallNode
-    WinInstallWget
-    WinInstallCurl
+    if where choco /dev/null; then
+        WinInstallNode
+        WinInstallWget
+        WinInstallCurl
+    else 
+        echo "You don't have Choco Installed please check the ReadMe file and install then run"
+        exit
+    fi
 fi
 
 echo 'Node, Wget, and Curl has been installed' 
