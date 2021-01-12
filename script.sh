@@ -9,7 +9,6 @@ function InstallNode() {
         if [ "$(uname)" == "Darwin" ]; then
             brew install node
         elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-            curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
             sudo apt-get install nodejs -y
             echo "Node has been installed."
         fi
@@ -60,11 +59,11 @@ function WinInstallNode() {
 function WinInstallWget() { 
     echo "Checking if Wget is installed"
     if where wget > /dev/null; then
-        echo "Node has already been installed."
+        echo "Wget has already been installed."
     else
         echo "Installing Wget"
         choco install wget
-        echo "Node has been installed."
+        echo "Wget has been installed."
     fi
 }
 
