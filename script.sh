@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 function InstallNode() {
-    echo "Checking if Node is installed"
+    echo "Checking if NodeJS is installed"
     if which node > /dev/null; then
-        echo "Node has already been installed."
+        echo "NodeJS has already been installed."
     else
-        echo "Installing Node"
+        echo "Installing NodeJS"
         if [ "$(uname)" == "Darwin" ]; then
             brew install node
         elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
@@ -46,11 +46,11 @@ function InstallCurl() {
 }
 
 function WinInstallNode() { 
-    echo "Checking if Node is installed"
+    echo "Checking if NodeJS is installed"
     if where node > /dev/null; then
         echo "Node has already been installed."
     else
-        echo "Installing Node"
+        echo "Installing NodeJS"
         choco install nodejs
         echo "Node has been installed."
     fi

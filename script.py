@@ -3,20 +3,20 @@ from shutil import which
 import subprocess
 
 def install_node():
-    print("Checking if Node is installed")
+    print("Checking if NodeJS is installed")
     if which("node") is not None:
-        print("Node has already been installed.")
+        print("NodeJS has already been installed.")
     else:
         print("Installing Node")
         if platform == "linux" or platform == "linux2":
             subprocess.run(["sudo", "apt", "install", 'nodejs', "-y"], check=True)
-            print("Node has been installed.")
+            print("NodeJS has been installed.")
         elif platform == "darwin":
             subprocess.run(["brew", "install", "node"], check=True)
-            print("Node has been installed.")
+            print("NodeJS has been installed.")
         elif platform == "win32" or "win64" or "cygwin":
-            subprocess.run(["choco", "install", "node"], check=True)
-            print("Node has been installed.")
+            subprocess.run(["choco", "install", "nodejs"], check=True)
+            print("NodeJS has been installed.")
         else:
             print("Can't idetify system")
 

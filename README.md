@@ -1,5 +1,5 @@
 ## What do the scripts do:
-    Both Scripts are run on bash or python to install Node, Wget and Curl in different systems
+    Both Scripts are run on bash or python to install NodeJS, Wget and Curl in different systems
 
 ## Any prerequisite needed to run the script:
     For Windows Chocolatey needs to be installed from https://chocolatey.org/install
@@ -14,4 +14,5 @@
     - or run `python script.py`
 
 ## Any extra information on how to extend the script for further:   
-    The Bash Script will have isues running on most Windows system(especially if you don't have WSL) since it is primarily a Unix system languange. The Python is preferred for Windows. 
+    The Bash Script will have isues running on most Windows system(especially if you don't have WSL) 
+    since it is primarily a Unix system languange. The Python is preferred for Windows. 
