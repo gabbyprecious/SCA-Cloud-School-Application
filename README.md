@@ -15,4 +15,5 @@
 
 ## Any extra information on how to extend the script for further:   
     The Bash Script will have isues running on most Windows system(especially if you don't have WSL) 
-    since it is primarily a Unix system languange. The Python is preferred for Windows. 
+    since it is primarily a Unix system languange. The Python script is preferred for Windows.
+    Also, only the Ubuntu(Debian) Linux system was addressed as it is the most common.  
